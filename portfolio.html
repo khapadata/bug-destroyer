@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeIt-Lit | Portfolio</title>
+    <meta name="description" content="Explore our portfolio of successful projects and creative digital solutions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">MakeIt-Lit</div>
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Loading Progress Bar -->
+    <div class="loading-progress" id="loadingProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">MakeIt-Lit</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <h1>Our <span class="gradient-text">Portfolio</span></h1>
+                <p>Showcasing our latest projects and the innovative solutions we've delivered for our clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web design">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-desktop"></i>
+                            <span>TechCorp Website</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="1">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TechCorp Corporate Website</h3>
+                        <p>Modern corporate website with advanced animations and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>FitTracker App</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="2">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTracker Mobile App</h3>
+                        <p>Comprehensive fitness tracking application with social features and analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Development</span>
+                            <span class="tag">React Native</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ecommerce web">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>StyleHub Store</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="3">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>StyleHub E-commerce Platform</h3>
+                        <p>Full-featured online fashion store with advanced search and recommendation engine.</p>
+                        <div class="project-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Payment Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-palette"></i>
+                            <span>Brand Identity</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="4">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoGreen Brand Identity</h3>
+                        <p>Complete brand identity design including logo, color palette, and design system.</p>
+                        <div class="project-tags">
+                            <span class="tag">Brand Design</span>
+                            <span class="tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics Dashboard</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="5">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard with interactive charts and data visualization.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="mobile design">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-utensils"></i>
+                            <span>FoodieApp</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="6">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FoodieApp Restaurant Finder</h3>
+                        <p>Location-based restaurant discovery app with reviews and reservation system.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Location Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Title</h2>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="placeholder-modal-image" id="modalImage">
+                        <i class="fas fa-image"></i>
+                        <span>Project Preview</span>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <p id="modalDescription">Project description will appear here.</p>
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul id="modalFeatures">
+                            <li>Feature will be listed here</li>
+                        </ul>
+                    </div>
+                    <div class="modal-technologies">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-stack" id="modalTechnologies">
+                            <span class="tech-tag">Technology</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#" class="btn btn-primary" id="modalLiveLink" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Live Site
+                        </a>
+                        <a href="#" class="btn btn-secondary" id="modalCaseStudy">
+                            <i class="fas fa-file-alt"></i>
+                            Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's collaborate to create something amazing that exceeds your expectations and delights your users.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    Start Your Project
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MakeIt-Lit</h3>
+                    <p>Transforming ideas into digital reality.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#" target="_blank">LinkedIn</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="#" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MakeIt-Lit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Chatbot -->
+    <div class="faq-chatbot" id="faqChatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>FAQ Assistant</span>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm here to help answer any questions about MakeIt-Lit. What would you like to know?</p>
+                        <div class="quick-questions">
+                            <button class="quick-btn" data-question="What services do you offer?">Services</button>
+                            <button class="quick-btn" data-question="How much do projects cost?">Pricing</button>
+                            <button class="quick-btn" data-question="How long does development take?">Timeline</button>
+                            <button class="quick-btn" data-question="Can I see your portfolio?">Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask a question...">
+                <button class="chat-send" id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle -->
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+        <span class="toggle-text">Need Help?</span>
+    </div>
+
+    <!-- Newsletter/Ebook Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <button class="popup-close" id="popupClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-header">
+                <div class="popup-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Get Your Free Digital Marketing Guide!</h3>
+                <p>Join our newsletter and download our comprehensive digital marketing ebook absolutely free.</p>
+            </div>
+            <div class="popup-form">
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <input type="text" id="popupName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="popupEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="popupConsent" required>
+                            <span class="checkmark"></span>
+                            I agree to receive marketing emails and the free ebook
+                        </label>
+                    </div>
+                    <button type="submit" class="popup-submit">
+                        <i class="fas fa-download"></i>
+                        Get Free Ebook
+                    </button>
+                </form>
+            </div>
+            <div class="popup-benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <span>50+ Digital Marketing Strategies</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <span>Monthly Industry Updates</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <span>Exclusive Tips & Insights</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
